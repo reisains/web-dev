@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    min-height: 200vh;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+    left: 0;
+    padding: 40px 100px;
+    position: fixed;
+    top: 0;
+    transition: 0.6s;
+    width: 100%;    
+    z-index: 100000;
+}
+
+header.sticky{
+    background-color: #fff;
+    padding: 5px 100px;
+}
+header .logo {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+.logo {
+    background-image: url(/assets/img/logo-removebg-preview.png);
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-size: contain; /* Ensure the image fits the element */
+    display: inline-block; /* Ensure it can display the background */
+    height: 100px;          /* Set a height for the logo */
+    text-indent: -9999px;   /* Hide the text if needed */
+    width: 100px;          /* Set a width for the logo */
+}
+header ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+}
+
+header ul li a {
+    color: #fff;
+    font-weight: 500px;
+    letter-spacing: 2px;
+    margin: 0 15px;
+    position: relative;
+    text-decoration: none; /* removing underline */
+    transition: 0.6s;
+}
+
+.banner {
+    /* background: url(/assets/img/WALLPAPERS.jpg); */
+    background: url(/assets/img/8bit.jpeg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+
+}
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+}
+
+
+/* TODO: fix sizes of each container 
+deadline: Until Friday */
+
+/* MAIN BODY HERE */
+
+div {
+    color: white;
+}
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr; /*only 2 columns, you can add more by adding more 1fr*/
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+    "sidebar main"
+    "sidebar content1"
+    "sidebar content2"
+    "sidebar content3"
+    "sidebar content4"
+    "footer footer";
+}
+
+main {
+    background-color: #fa8989;
+    grid-area: main;
+}
+
+#sidebar {
+    background-color: #f64d52;
+    grid-area: sidebar;
+}
+
+#content1{
+    background-color: #a91834;
+    grid-area: content1;
+}
+#content2{
+    background-color: 	#840029;
+    grid-area: content2;
+}
+#content3{
+    background-color: #fddac3;
+    grid-area: content3;
+}
+#content4{
+    background-color: #580f21;
+    grid-area: content4;
+}
+footer {
+    background-color: #a52c57;
+    grid-area: footer;
+}
