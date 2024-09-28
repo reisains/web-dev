@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/assets/test.css" />
+    <title>Nintendo Switch</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="sidebar-active" />
+        <label for="sidebar-active" class="open-sidebar-button"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#e8eaed"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+          <label for="sidebar-active" class="close-sidebar-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="#e8eaed"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </label>
+
+          <a href="/pages/home.html" class="logo-link">
+            <img src="/assets/img/logo-removebg-preview.png" alt="1 UP Logo"
+          /></a>
+          <!-- <li><a href="#">Home</a></li> -->
+          <a href="#">Nintendo</a>
+          <a href="#">Playstation</a>
+          <a href="#"> XBOX</a>
+          <a href="#" class="favorite-svg">Favorites</a>
+          <a href="#" class="add-to-cart-svg">Cart</a>
+        </div>
+      </nav>
+    </header>
+    <video
+      autoplay
+      loop
+      plays-inline
+      muted
+      class="back-video"
+      src="/assets/img/nintendo/zelda-banner.mp4"
+    ></video>
+    <section class="product">
+      <h2 class="product-category">Sale</h2>
+      <button class="pre-btn">
+        <img src="/assets/img/arrow.png" alt="" />
+      </button>
+      <button class="nxt-btn">
+        <img src="/assets/img/arrow.png" alt="" />
+      </button>
+      <div class="product-container">
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="/assets/img/nintendo/mario.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to Favorites</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Super Mario Party Jamboree</h2>
+            <span class="price">$50</span><span class="actual-price">$100</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">20% off</span>
+            <img
+              src="/assets/img/nintendo/mickeymouse.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to Favorites</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Disney Epic Mickey: Rebrushed</h2>
+            <span class="price">$120</span
+            ><span class="actual-price">$150</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">30% off</span>
+            <img
+              src="/assets/img/nintendo/oregon.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to Favorites</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">The Oregon Trail</h2>
+            <span class="price">$42</span><span class="actual-price">$60</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">10% off</span>
+            <img
+              src="/assets/img/nintendo/sonic.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to Favorites</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Sonic X Shadow Generations</h2>
+            <span class="price">$36</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">5% off</span>
+            <img
+              src="/assets/img/nintendo/zelda.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to Favorites</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">The Legend of Zelda: Echoes of Wisdom</h2>
+            <span class="price">$47.5</span
+            ><span class="actual-price">$50</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">75% off</span>
+            <img
+              src="/assets/img/nintendo/pokemon.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to Favorites</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Pokemon Legends: Arceus</h2>
+            <span class="price">$45</span><span class="actual-price">$180</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">10% off</span>
+            <img
+              src="/assets/img/nintendo/gundam.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to Favorites</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Gundam Breaker 4: Launch Edition</h2>
+            <span class="price">$90</span><span class="actual-price">$100</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">5% off</span>
+            <img
+              src="/assets/img/nintendo/nba2k25.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to Favorites</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">NBA 2K25</h2>
+            <span class="price">$47.5</span
+            ><span class="actual-price">$50</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="/assets/img/nintendo/animal-crossing.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to Favorites</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Animal Crossing: New Horizons</h2>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">60% off</span>
+            <img
+              src="/assets/img/nintendo/yoshi.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to Favorites</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Yoshi's Crafted World</h2>
+            <span class="price">$40</span><span class="actual-price">$100</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>
